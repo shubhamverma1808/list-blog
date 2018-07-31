@@ -1,0 +1,18 @@
+extends layout
+
+block  content
+    div.col-md-12.container
+        each d in data
+            div.pt-3
+                div.card
+                    div.card-header=d.listTitle
+                    div.card-body
+                        div.card-deck
+                            each item in d.listItems
+                                div.card
+                                    iframe(src=item.src, frameborder="0" allowfullscreen="allowfullscreen" style="width:100%")
+                                    div.card-body
+                                        h5.card-title=item.title
+                                        p.card-text There is something that we don't want to miss
+                        
+                    

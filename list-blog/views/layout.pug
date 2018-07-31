@@ -1,0 +1,30 @@
+doctype 5
+html
+    head
+        title ShubhamV
+        link(rel="stylesheet", href="/bower_components/bootstrap/dist/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/css/style.css")
+        
+    body
+        .container
+            header.blog-header.py-3
+                div.row.flex-nowrap.justify-content-between.align-items-center
+                    div.col-4.pt-1
+                    div.col-4.text-center
+                        a.blog-header-logo.text-dark(href='/') ShubhamV
+                    div.col-4.d-flex.justify-content-end.align-items-center
+            div.nav-scroller.py-1.mb-2
+                nav.nav.d-flex.justify-content-between
+                    a(href="#").p-2.text-muted Music
+                    a(href="#").p-2.text-muted Dance
+                    a(href="#").p-2.text-muted Movies
+                    a(href="#").p-2.text-muted Web Series
+                    a(href="#").p-2.text-muted Standup Comedy
+                    a(href="#").p-2.text-muted Interviews
+                    a(href="#").p-2.text-muted Quotes
+            block content
+            br
+            hr
+            footer.blog-footer
+                p Copyright &copy; 2018 shubhamv.azurewebsites.net
+
